@@ -1,11 +1,8 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "samnail-maker",
     htmlAttrs: {
@@ -19,18 +16,12 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  css: ["~/assets/scss/global.scss"],
+  css: ["./assets/scss/global.scss"],
 
   styleResources: {
     scss: ["@/assets/scss/mixins.scss"],
   },
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   build: {
