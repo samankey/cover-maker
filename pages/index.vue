@@ -74,42 +74,42 @@
 </template>
 
 <script>
-import html2canvas from 'html2canvas';
-import themeList from '@/assets/data/theme.json';
-import Tag from '@/components/tag/tag';
+import html2canvas from "html2canvas";
+import themeList from "@/assets/data/theme.json";
+import Tag from "@/components/tag/tag";
 
 export default {
-  layout: 'main',
+  layout: "main",
   components: {
-    Tag
+    Tag,
   },
 
   data() {
     return {
       height: 0,
-      signText: '',
-      tagText: '',
-      tagType: 'fill',
+      signText: "@samankeyc",
+      tagText: "",
+      tagType: "fill",
       tagList: [],
       noItem: [
-        { text: 'write', type: 'fill' },
-        { text: '✍🏼', type: 'fill' },
-        { text: ',', type: 'ghost' },
-        { text: 'add', type: 'border' },
-        { text: '✚', type: 'ghost' },
-        { text: 'and', type: 'ghost' },
-        { text: 'ㅡ', type: 'ghost' },
-        { text: 'download', type: 'fill' },
-        { text: '📂', type: 'fill' },
-        { text: '(', type: 'ghost' },
-        { text: 'your', type: 'ghost' },
-        { text: 'tags', type: 'border' },
-        { text: ')', type: 'ghost' },
-        { text: '🔖', type: 'ghost' }
+        { text: "write", type: "fill" },
+        { text: "✍🏼", type: "fill" },
+        { text: ",", type: "ghost" },
+        { text: "add", type: "border" },
+        { text: "✚", type: "ghost" },
+        { text: "and", type: "ghost" },
+        { text: "ㅡ", type: "ghost" },
+        { text: "download", type: "fill" },
+        { text: "📂", type: "fill" },
+        { text: "(", type: "ghost" },
+        { text: "your", type: "ghost" },
+        { text: "tags", type: "border" },
+        { text: ")", type: "ghost" },
+        { text: "🔖", type: "ghost" },
       ],
-      types: ['fill', 'border', 'ghost'],
-      themeTitle: 'w_b',
-      themeList: themeList.color
+      types: ["fill", "border", "ghost"],
+      themeTitle: "w_b",
+      themeList: themeList.color,
     };
   },
 
@@ -123,9 +123,9 @@ export default {
         bg: `${theme.bg}`,
         fill: `${theme.fill} ${theme.bd} ${theme.fill_ft}`,
         border: `${theme.bd} ${theme.bd_ft}`,
-        ghost: `${theme.bd_ft} bd_transparent`
+        ghost: `${theme.bd_ft} bd_transparent`,
       };
-    }
+    },
   },
 
   updated() {
@@ -148,10 +148,10 @@ export default {
     addTag() {
       const text = { text: this.tagText, type: this.tagType };
       if (!this.tagText) {
-        alert('없어');
+        alert("없어");
       } else {
         this.tagList.push(text);
-        this.tagText = '';
+        this.tagText = "";
       }
     },
 
@@ -165,29 +165,29 @@ export default {
     },
 
     setHeight() {
-      const height = document.querySelector('.textBox')?.offsetHeight;
+      const height = document.querySelector(".textBox")?.offsetHeight;
       this.height = height;
       if (this.height > 256) {
         this.tagList.pop();
-        alert('끝');
+        alert("끝");
       }
     },
 
     downloadImage() {
       html2canvas(this.$refs.canvas).then((canvas) => {
         const imageUri = canvas.toDataURL();
-        this.downloadURI(imageUri, 'thumbnail.png');
+        this.downloadURI(imageUri, "thumbnail.png");
       });
     },
 
     downloadURI(uri, name) {
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.download = name;
       link.href = uri;
       document.body.appendChild(link);
       link.click();
-    }
-  }
+    },
+  },
 };
 </script>
 
