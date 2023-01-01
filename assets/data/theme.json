@@ -1,0 +1,71 @@
+{
+  "color": [
+    {
+      "title": "w_b",
+      "bg": "bg_White",
+      "bd": "bd_Black",
+      "fill": "bg_Black",
+      "bd_ft": "ft_Black",
+      "fill_ft": "ft_White"
+    },
+    {
+      "title": "b_w",
+      "bg": "bg_Black",
+      "bd": "bd_White",
+      "fill": "bg_White",
+      "bd_ft": "ft_White",
+      "fill_ft": "ft_Black"
+    },
+
+    {
+      "title": "w_blu",
+      "bg": "bg_White",
+      "bd": "bd_Blue",
+      "fill": "bg_Blue",
+      "bd_ft": "ft_Blue",
+      "fill_ft": "ft_White"
+    },
+    {
+      "title": "blu_w",
+      "bg": "bg_Blue",
+      "bd": "bd_White",
+      "fill": "bg_White",
+      "bd_ft": "ft_White",
+      "fill_ft": "ft_Blue"
+    },
+
+    {
+      "title": "n_w",
+      "bg": "bg_White",
+      "bd": "bd_Neon",
+      "fill": "bg_Neon",
+      "bd_ft": "ft_Black",
+      "fill_ft": "ft_Black"
+    },
+    {
+      "title": "n_b",
+      "bg": "bg_Neon",
+      "bd": "bd_Black",
+      "fill": "bg_Black",
+      "bd_ft": "ft_Black",
+      "fill_ft": "ft_Neon"
+    },
+
+    {
+      "title": "w_y",
+      "bg": "bg_White",
+      "bd": "bd_Yellow",
+      "fill": "bg_Yellow",
+      "bd_ft": "ft_Black",
+      "fill_ft": "ft_Black"
+    },
+    {
+      "title": "y_w",
+      "bg": "bg_Yellow",
+      "bd": "bd_White",
+      "fill": "bg_White",
+      "bd_ft": "ft_Black",
+      "fill_ft": "ft_Black"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+@import 'variables.scss';
+@import 'flexbox.scss';
+
+// flex
+@mixin flex-item($justify-content: flex-start, $align-items: center) {
+  @include flexbox;
+  @include justify-content($justify-content);
+  @include align-items($align-items);
+  @content;
+}
+
+@mixin flex-default {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+@mixin flex-space-between {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+}
+
+// scroll
+@mixin scroll-style {
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: $BackGray;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  &::-webkit-scrollbar {
+    overflow: visible;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    overflow: visible;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $HoverGray;
+  }
+}
+
+@function rem($px) {
+  /* px을 rem으로 변환하는 함수 */
+  // $px      (Number) 변환할 px 값
+  @return calc($px / 16) * 1rem;
+}

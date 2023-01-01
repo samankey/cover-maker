@@ -1,0 +1,380 @@
+@import url('normalize.css');
+@import 'variables.scss';
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Spoqa Han Sans Neo';
+  src: local('Spoqa Han Sans Neo Bold'),
+    url('~assets/fonts/SpoqaHanSansNeo/Bold/SpoqaHanSansNeo-Bold.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Spoqa Han Sans Neo';
+  src: local('Spoqa Han Sans Neo Medium'),
+    url('~assets/fonts/SpoqaHanSansNeo/Medium/SpoqaHanSansNeo-Medium.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Spoqa Han Sans Neo';
+  src: local('Spoqa Han Sans Neo Regular'),
+    url('~assets/fonts/SpoqaHanSansNeo/Regular/SpoqaHanSansNeo-Regular.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Spoqa Han Sans Neo';
+  src: local('Spoqa Han Sans Neo Light'),
+    url('~assets/fonts/SpoqaHanSansNeo/Light/SpoqaHanSansNeo-Light.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: 'Spoqa Han Sans Neo';
+  src: local('Spoqa Han Sans Neo Thin'),
+    url('~assets/fonts/SpoqaHanSansNeo/Thin/SpoqaHanSansNeo-Thin.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-family: 'Mermaid1001'; /* 사용하고 싶은 font-family명을 지정 */
+  src: url('~assets/fonts/mermaid/Mermaid1001.ttf') format('opentype'); /* 폰트파일 불러오기 */
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: 'Spoqa Han Sans Neo';
+  width: 100%;
+  height: 100%;
+  color: $Black_100;
+}
+#__nuxt,
+#__layout {
+  width: 100%;
+  height: 100%;
+}
+
+/* component / Font */
+.Headline {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.04rem;
+}
+.Title1 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.04rem;
+}
+.Title2 {
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+}
+.SubTitle1 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.04rem;
+}
+.SubTitle2 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+}
+.Body1 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: -0.03rem;
+}
+.Body2 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: -0.03rem;
+}
+.Caption1 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: -0.03rem;
+}
+.Caption2 {
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: -0.03rem;
+}
+
+/*background-color*/
+// .bg_DarkBlue {
+//   background-color: $DarkBlue;
+// }
+// .bg_DeepBlue {
+//   background-color: $DeepBlue;
+// }
+// .bg_Blue {
+//   background-color: $Blue;
+// }
+// .bg_Blue_30 {
+//   background-color: $Blue_30;
+// }
+// .bg_Blue_10 {
+//   background-color: $Blue_10;
+// }
+// .bg_Green {
+//   background-color: $Green;
+// }
+// .bg_Green_10 {
+//   background-color: $Green_10;
+// }
+// .bg_Orange {
+//   background-color: $Orange;
+// }
+// .bg_Orange_10 {
+//   background-color: $Orange_10;
+// }
+// .bg_Red {
+//   background-color: $Red;
+// }
+// .bg_Red_10 {
+//   background-color: $Red_10;
+// }
+// .bg_Orange {
+//   background-color: $Orange;
+// }
+// .bg_Orange_10 {
+//   background-color: $Orange_10;
+// }
+// .bg_DarkGray {
+//   background-color: $DarkGray;
+// }
+// .bg_MidGray {
+//   background-color: $MidGray;
+// }
+// .bg_LightGray {
+//   background-color: $LightGray;
+// }
+// .bg_HoverGray {
+//   background-color: $HoverGray;
+// }
+// .bg_BackGray {
+//   background-color: $BackGray;
+// }
+
+// .bg_Black_100 {
+//   background-color: $Black_100;
+// }
+// .bg_Black_70 {
+//   background-color: $Black_70;
+// }
+// .bg_Black_40 {
+//   background-color: $Black_40;
+// }
+// .bg_Black_20 {
+//   background-color: $Black_20;
+// }
+
+// .bg_White_100 {
+//   background-color: $White_100;
+// }
+// .bg_White_70 {
+//   background-color: $White_70;
+// }
+// .bg_White_40 {
+//   background-color: $White_40;
+// }
+// .bg_White_20 {
+//   background-color: $White_20;
+// }
+
+/*font color*/
+// .ft_DarkBlue {
+//   color: $DarkBlue;
+// }
+// .ft_DeepBlue {
+//   color: $DeepBlue;
+// }
+// .ft_Blue {
+//   color: $Blue;
+// }
+// .ft_Blue_10 {
+//   color: $Blue_10;
+// }
+// .ft_Green {
+//   color: $Green;
+// }
+// .ft_Green_10 {
+//   color: $Green_10;
+// }
+// .ft_Red {
+//   color: $Red;
+// }
+// .ft_Red_10 {
+//   color: $Red_10;
+// }
+// .ft_Orange {
+//   color: $Orange;
+// }
+// .ft_Orange_10 {
+//   color: $Orange_10;
+// }
+.ft_Black_100 {
+  color: $Black_100;
+} /* ft_100 */
+.ft_Black_70 {
+  color: $Black_70;
+} /* ft_70 */
+.ft_Black_40 {
+  color: $Black_40;
+} /* ft_40 */
+.ft_Black_20 {
+  color: $Black_20;
+} /* ft_20 */
+// .ft_White_100 {
+//   color: $White_100;
+// } /* ft_w */
+// .ft_White_70 {
+//   color: $White_70;
+// } /* ft_w_70 */
+// .ft_White_40 {
+//   color: $White_40;
+// }
+// .ft_White_20 {
+//   color: $White_20;
+// }
+// .ft_MidGray {
+//   color: $MidGray;
+// }
+// .ft_DarkGray {
+//   color: $DarkGray;
+// }
+
+// border color
+.bd_Gray {
+  border: 2px solid $Black;
+}
+.bd_Top_Gray {
+  border-top: 2px solid $Black;
+}
+.bd_Btm_Gray {
+  border-bottom: 2px solid $Black;
+}
+.bd_Left_Gray {
+  border-left: 2px solid $Black;
+}
+.bd_Right_Gray {
+  border-right: 2px solid $Black;
+}
+//
+.bg_White {
+  background-color: $White;
+}
+
+.bg_Black {
+  background-color: $Black;
+}
+
+.bg_Blue {
+  background-color: $Blue;
+}
+
+.bg_Neon {
+  background-color: $Neon;
+}
+
+.bg_Yellow {
+  background-color: $Yellow;
+}
+
+//
+.bd_Black {
+  border: 2px solid $Black;
+}
+
+.bd_White {
+  border: 2px solid $White;
+}
+
+.bd_Blue {
+  border: 2px solid $Blue;
+}
+
+.bd_Neon {
+  border: 2px solid $Neon;
+}
+
+.bd_Yellow {
+  border: 2px solid $Yellow;
+}
+
+.bd_transparent {
+  border: 2px solid transparent;
+}
+
+//
+.ft_Black {
+  color: $Black;
+}
+
+.ft_White {
+  color: $White;
+}
+
+.ft_Blue {
+  color: $Blue;
+}
+
+.ft_Neon {
+  color: $Neon;
+}
+
+.ft_Yellow {
+  color: $Yellow;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+textarea:focus {
+  outline: none;
+}
+input {
+  background-color: transparent;
+  color: #001129;
+  border-style: none;
+}
+input:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+p,
+ul,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.clear_image {
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
