@@ -146,19 +146,19 @@ export default {
     },
 
     addTag() {
-      const text = { text: this.tagText, type: this.tagType };
+      const text = { id: Math.random(), text: this.tagText, type: this.tagType };
       if (!this.tagText) {
-        alert("없어");
+        alert('없어');
       } else {
         this.tagList.push(text);
-        this.tagText = "";
+        this.tagText = '';
       }
     },
 
     deleteTag(tag) {
       const index = this.tagList
         .map((item) => {
-          return item.text === tag;
+          return item.text === tag.text && item.id === tag.id;
         })
         .indexOf(true);
       this.tagList.splice(index, 1);

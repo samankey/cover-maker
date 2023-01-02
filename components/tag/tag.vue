@@ -40,7 +40,7 @@ export default {
 
   methods: {
     deleteTag() {
-      this.$emit('deleteTag', this.tag.text);
+      this.$emit('deleteTag', this.tag);
     }
   }
 };
