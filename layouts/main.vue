@@ -1,6 +1,7 @@
 <template>
   <div class="main bg_White">
     <div class="mainBox">
+      <Toast />
       <header class="title">THUMBNAILㅡ<br />MAKER</header>
       <Nuxt class="bd_Gray" />
       <p class="copyright Caption1 ft_Black_40">
@@ -9,6 +10,15 @@
     </div>
   </div>
 </template>
+
+<script>
+import Toast from '~/components/default/default/toast';
+export default {
+  components: {
+    Toast
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .main {
