@@ -59,44 +59,44 @@
   }
 
   .informative {
-    background: $BackGray;
-    border: 1px solid $DarkGray;
+    // background: $BackGray;
+    // border: 1px solid $DarkGray;
   }
 
   .positive {
-    background: $Green_10;
-    border: 1px solid $Green;
+    // background: $Green_10;
+    // border: 1px solid $Green;
   }
 
   .warning {
-    background: $Orange_10;
-    border: 1px solid $Orange;
+    // background: $Orange_10;
+    // border: 1px solid $Orange;
   }
 }
 
-@media (max-width: 600px) {
-  .vue-notification-group {
-    width: 100% !important;
-    top: 0 !important;
-    left: 0 !important;
+// @media (max-width: 600px) {
+//   .vue-notification-group {
+//     width: 100% !important;
+//     top: 0 !important;
+//     left: 0 !important;
 
-    .notification {
-      padding: 0.75rem;
+//     .notification {
+//       padding: 0.75rem;
 
-      .iconTitleWrap {
-        .title {
-          margin-left: 0.5rem;
-        }
-      }
+//       .iconTitleWrap {
+//         .title {
+//           margin-left: 0.5rem;
+//         }
+//       }
 
-      .close {
-        display: none;
-      }
-    }
+//       .close {
+//         display: none;
+//       }
+//     }
 
-    .closeIcon {
-      display: none;
-    }
-  }
-}
+//     .closeIcon {
+//       display: none;
+//     }
+//   }
+// }
 </style>
