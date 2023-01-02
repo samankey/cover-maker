@@ -2,7 +2,7 @@
   <div class="main bg_White">
     <div class="mainBox">
       <Toast />
-      <header class="title">THUMBNAILㅡ<br />MAKER</header>
+      <header class="title">SAMNAILㅡ<br />MAKER</header>
       <Nuxt class="bd_Gray" />
       <p class="copyright Caption1 ft_Black_40">
         Copyright 2023. samankeyc All rights reserved.
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import Toast from '~/components/default/default/toast';
+import Toast from "~/components/default/toast";
 export default {
   components: {
-    Toast
-  }
-}
+    Toast,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -27,7 +27,6 @@ export default {
 
   .mainBox {
     .title {
-      border-radius: 6.25rem;
       font-size: 3.75rem;
       font-weight: 700;
     }
