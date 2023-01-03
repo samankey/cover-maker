@@ -1,22 +1,13 @@
 <template>
   <notifications
-    position="top center"
-    :width="460"
+    position="left bottom"
+    :width="300"
     :duration="3500"
     :max="2"
     style="margin-top: 1rem"
   >
-    <template slot="body" slot-scope="{ item, close }">
-      <div
-        class="notification"
-        :class="
-          item.type === 'informative'
-            ? 'informative'
-            : item.type === 'positive'
-              ? 'positive'
-              : 'warning'
-        "
-      >
+    <template slot="body" slot-scope="{ item }">
+      <div class="notification Body1 informative">
         <p class="title Body2">
           {{ item.title }}
         </p>
@@ -32,10 +23,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 1rem 1rem;
-    padding: 1.3rem;
-    font-size: 1rem;
+    padding: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 8px #E8E9EB;
 
     .iconTitleWrap {
       display: flex;
@@ -54,23 +43,10 @@
     }
   }
 
-  .closeIcon {
-    cursor: pointer;
-  }
-
   .informative {
-    // background: $BackGray;
-    // border: 1px solid $DarkGray;
-  }
-
-  .positive {
-    // background: $Green_10;
-    // border: 1px solid $Green;
-  }
-
-  .warning {
-    // background: $Orange_10;
-    // border: 1px solid $Orange;
+    color: $White;
+    background: $Black;
+    /* border: 1px solid $Black; */
   }
 }
 

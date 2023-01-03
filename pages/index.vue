@@ -146,12 +146,16 @@ export default {
     },
 
     addTag() {
-      const text = { id: Math.random(), text: this.tagText, type: this.tagType };
+      const text = {
+        id: Math.random(),
+        text: this.tagText,
+        type: this.tagType,
+      };
       if (!this.tagText) {
-        this.$notify({title: '태그를 먼저 입력해주세요', type: 'warning'})
+        this.$notify({ title: "🔖 태그를 먼저 입력해주세요", type: "warning" });
       } else {
         this.tagList.push(text);
-        this.tagText = '';
+        this.tagText = "";
       }
     },
 
@@ -169,7 +173,7 @@ export default {
       this.height = height;
       if (this.height > 256) {
         this.tagList.pop();
-        this.$notify({title: '그러다 넘쳐요 😇', type: 'warning'})
+        this.$notify({ title: "그러다 넘쳐요 😇", type: "warning" });
       }
     },
 
